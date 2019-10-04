@@ -43,7 +43,7 @@ AC_ARG_ENABLE(strict, AS_HELP_STRING([--enable-strict],[Enable strict compilatio
 		enable_strict=$default_strict)
 if test x$enable_strict != xno; then
 	if test "$GCC" = "yes"; then
-		WARNINGFLAGS_C="$WARNINGFLAGS_C -Werror"
+		WARNINGFLAGS_C="$WARNINGFLAGS_C"
 	fi
 fi
 
